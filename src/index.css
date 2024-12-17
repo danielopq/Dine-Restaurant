@@ -1,0 +1,20 @@
+@font-face {
+    font-family:'LeagueSpartan-Bold' ;
+    src: url('./assets/fonts/LeagueSpartan-Bold.woff')format('woff');
+    font-size: 700;
+}
+@font-face {
+    font-family:'LeagueSpartan-SemiBold' ;
+    src: url('./assets/fonts/LeagueSpartan-SemiBold.woff')format('woff');
+    font-size: 600;
+}
+@font-face {
+    font-family:'LeagueSpartan-Regular' ;
+    src: url('./assets/fonts/LeagueSpartan-Regular.woff')format('woff');
+    font-size: 400;
+}
+@font-face {
+    font-family:'LeagueSpartan-Light' ;
+    src: url('./assets/fonts/LeagueSpartan-Light.woff')format('woff');
+    font-size: 300;
+}
