@@ -18,3 +18,11 @@
     src: url('./assets/fonts/LeagueSpartan-Light.woff')format('woff');
     font-size: 300;
 }
+
+:root{
+    --Beaver: #9e7f66; /*rgb(158, 127, 102) - hsl(27, 22%, 51%)*/
+    --CodGrey: #111111; /* rgb(17, 17, 17) - hsl(0, 0%, 7%)*/
+    --Mirage: #17192b; /* rgb(23, 25, 43) - hsl(234, 30%, 13%)*/
+    --EbonyClay: #242b37; /* rgb(36, 43, 55) - hsl(218, 21%, 18%)*/
+    --ShuttleGrey: #5c6779; /* rgb(92, 103, 121) - hsl(217°, 14%, 42%)*/
+}
