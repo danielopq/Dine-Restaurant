@@ -1,5 +1,27 @@
 #homeHeader{
     width: inherit;
     height: 820px;
-    border: solid 1px red;
+    background: url('./img/bg-desktop.jpg') right/1440px no-repeat;
+}
+
+#homeHeader div{
+    width: 545px;
+    height: inherit;
+    display: flex;
+    padding: 258px 0px 0px 165px;
+    flex-direction: column;
+    float:left;
+    background: var(--CodGrey) url(../../../../img/logo.svg) 167px 65px/103px no-repeat;
+    color:white;
+}
+
+#homeHeader h1{
+    width: 508px;
+    height: 160px;
+}
+
+#homeHeader p{
+    width: 445px;
+    height: 90px;
+    margin: 10px 0px 40px;
 }
