@@ -26,3 +26,17 @@
     --EbonyClay: #242b37; /* rgb(36, 43, 55) - hsl(218, 21%, 18%)*/
     --ShuttleGrey: #5c6779; /* rgb(92, 103, 121) - hsl(217°, 14%, 42%)*/
 }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
