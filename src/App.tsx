@@ -1,8 +1,10 @@
 import './App.css'
+import Home from './assets/components/home/Home'
 
 function App() {
   return (
     <>
+      <Home />
     </>
   )
 }
