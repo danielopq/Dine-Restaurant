@@ -1,9 +1,9 @@
 import './home.css';
-
-const Home:React.FC = ()=>{
-    return(
+import { HomeHeader } from './components'
+const Home: React.FC = () => {
+    return (
         <main id="home">
-            Home page
+            <HomeHeader />
         </main>
     )
 }
