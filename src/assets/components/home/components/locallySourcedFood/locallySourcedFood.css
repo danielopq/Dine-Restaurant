@@ -3,7 +3,8 @@
     height: 720px;
     display: inline-flex;
     margin-top: 31px;
-    border: solid 1px red;
+    background: url('../../../../img/pattern-curve-top-left.svg') 100% 100%/895px no-repeat;
+    z-index: 1;
 }
 
 #lsf-content{
@@ -12,7 +13,6 @@
     margin: 231px 125px 0px 165px;
     color: var(--EbonyClay);
     background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
-    border: solid 1px red;
 }
 
 #lsf-content h2{
@@ -21,7 +21,16 @@
 }
 
 #lsf-Pic{
-    width: 445px;
+    width: 654px;
     height: 720px;
-    border: solid 1px red;
+    margin-top: 90px;
+    background: url('./img/locally-sourced-desktop.jpg') left/540px no-repeat;
+}
+
+#lsf-Pic div{
+    width: 160px;
+    height: 76px;
+    margin-top: 282px;
+    float:right;
+    background: url('../../../../img/pattern-lines.svg') center/160px no-repeat;
 }

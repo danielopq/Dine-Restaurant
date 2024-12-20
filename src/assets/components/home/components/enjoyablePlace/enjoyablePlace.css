@@ -3,7 +3,7 @@
     height: 650px;
     padding-left: 165px;
     display: inline-flex;
-    background: url('./img/pattern.svg') 0px 250px/895px no-repeat;
+    background: url('../../../../img/pattern-curve-top-right.svg') 0px 250px/895px no-repeat;
 }
 
 #enjoyablePlace-pic{
