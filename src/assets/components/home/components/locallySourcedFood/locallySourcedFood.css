@@ -1,0 +1,27 @@
+#locallySourcedFood{
+    width: inherit;
+    height: 720px;
+    display: inline-flex;
+    margin-top: 31px;
+    border: solid 1px red;
+}
+
+#lsf-content{
+    width: 445px;
+    height: 275px;
+    margin: 231px 125px 0px 165px;
+    color: var(--EbonyClay);
+    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+    border: solid 1px red;
+}
+
+#lsf-content h2{
+    padding-right: 40px;
+    margin: 62px 0px 27px 0px;
+}
+
+#lsf-Pic{
+    width: 445px;
+    height: 720px;
+    border: solid 1px red;
+}
