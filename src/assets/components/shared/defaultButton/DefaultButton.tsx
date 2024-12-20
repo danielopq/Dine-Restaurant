@@ -15,7 +15,7 @@ interface DefaultButtonProps{
  */
 const DefaultButton:React.FC<DefaultButtonProps> = ({text,buttonType}) =>{
     return(
-        <button className={`defaultButton ${buttonType}`}>{text}</button>
+        <button className={`defaultButton ${buttonType}`}>{text.toUpperCase()}</button>
     )
 }
 export default DefaultButton;

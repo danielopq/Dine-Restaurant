@@ -3,7 +3,7 @@
     font: 600 17px/64px 'LeagueSpartan-SemiBold';
     letter-spacing: 2.5px;
     color: white;
-    transition: color 0.3s ease,background-color 0.3s ease,;
+    transition: color 0.3s ease,background-color 0.3s ease;
 }
 
 .darkBt{

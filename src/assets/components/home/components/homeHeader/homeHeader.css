@@ -26,12 +26,6 @@
     margin: 10px 0px 40px;
 }
 
-button{
+#homeHeader button{
     width: 245px;
-    height: 64px;
-    font: 600 17px/64px 'LeagueSpartan-SemiBold';
-    letter-spacing: 2.5px;
-    color: white;
-    background: transparent;
-    border: solid 1px white;
 }
