@@ -1,9 +1,10 @@
 import './home.css';
-import { HomeHeader } from './components'
+import { HomeHeader, EnjoyablePlace } from './components'
 const Home: React.FC = () => {
     return (
         <main id="home">
             <HomeHeader />
+            <EnjoyablePlace />
         </main>
     )
 }

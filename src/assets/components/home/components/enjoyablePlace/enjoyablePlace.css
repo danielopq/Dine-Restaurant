@@ -1,0 +1,14 @@
+#enjoyablePlace{
+    width: inherit;
+    height: 650px;
+    padding-left: 165px;
+    display: inline-flex;
+    border:solid 1px red;
+}
+
+#enjoyablePlace-pic{
+    width: 540px;
+    height: 720px;
+    margin-top: -70px;
+    background: url(./img/enjoyable-place-desktop.jpg) -223px -466px/955px no-repeat;
+}
