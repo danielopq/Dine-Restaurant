@@ -1,0 +1,29 @@
+.defaultButton{
+    height: 64px;
+    font: 600 17px/64px 'LeagueSpartan-SemiBold';
+    letter-spacing: 2.5px;
+    color: white;
+    transition: color 0.3s ease,background-color 0.3s ease,;
+}
+
+.darkBt{
+    background-color: var(--CodGrey);
+    border: solid 1px var(--CodGrey);
+}
+
+.lightBt{
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+@media(hover:hover){
+    .darkBt:hover{
+        background-color: white;
+        color: var(--CodGrey);
+    }
+    
+    .lightBt:hover{
+        background-color: white;
+        color: var(--CodGrey);
+    } 
+}
