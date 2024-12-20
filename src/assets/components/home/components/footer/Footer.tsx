@@ -1,10 +1,19 @@
 import './footer.css';
 
+import DefaultButton from '../../../shared/defaultButton/DefaultButton';
+
+/**
+ * Renders the footer for the home page, including a call-to-action 
+ * button for reservations and contact information.
+ * 
+ * @returns {JSX.Element} - The Footer component.
+ */
 const Footer:React.FC = () =>{
     return(
         <footer>
             <div id="footerTop">
                 <h2>Ready to make a reservation?</h2>
+                <DefaultButton text='BOOK A TABLE' buttonType='lightBt'/>
             </div>
             <div id="footerBottom">
                 <div>
