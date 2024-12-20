@@ -1,5 +1,10 @@
 import './highlights.css';
 
+/**
+ * Renders the "Highlights" section of the home page, showcasing popular menu items.
+ * 
+ * @returns {JSX.Element} - A React component displaying the highlights section with featured dishes.
+ */
 const Highlights: React.FC = () => {
     return (
         <section id="highlights">
@@ -13,7 +18,7 @@ const Highlights: React.FC = () => {
                 </div>
                 <div id="highlights-dishes">
                     <div className='dish'>
-                        <div className='dish-pic'>
+                        <div id="dish-salmon" className='dish-pic'>
                             <div></div>
                         </div>
                         <div className='dish-content'>
@@ -25,7 +30,7 @@ const Highlights: React.FC = () => {
                     </div>
                     <div className="dish-separator"></div>
                     <div className='dish'>
-                        <div className='dish-pic'>
+                        <div id="dish-beef" className='dish-pic'>
                             <div></div>
                         </div>
                         <div className='dish-content'>
@@ -37,7 +42,7 @@ const Highlights: React.FC = () => {
                     </div>
                     <div className="dish-separator"></div>
                     <div className='dish'>
-                        <div className='dish-pic'>
+                        <div id="dish-chocolate" className='dish-pic'>
                             <div></div>
                         </div>
                         <div className='dish-content'>
