@@ -4,7 +4,6 @@
     padding-left: 165px;
     display: inline-flex;
     background: url('./img/pattern.svg') 0px 250px/895px no-repeat;
-    border:solid 1px red;
 }
 
 #enjoyablePlace-pic{
@@ -12,4 +11,17 @@
     height: 720px;
     margin-top: -70px;
     background: url('./img/enjoyable-place-desktop.jpg') -223px -466px/955px no-repeat;
+}
+
+#enjoyablePlace-content{
+    width: 445px;
+    height: 275px;
+    margin: 177px 0px 0px 125px;
+    color: var(--EbonyClay);
+    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+}
+
+#enjoyablePlace-content h2{
+    padding-right: 40px;
+    margin: 62px 0px 27px;
 }

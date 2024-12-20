@@ -45,7 +45,7 @@ button{
     cursor:pointer;
 }
 
-h1,p{
+h1,h2,p{
     margin: 0px;
     padding: 0px;
 }
@@ -53,6 +53,11 @@ h1,p{
 h1{
     font: 300 80px/80px 'LeagueSpartan-Light';
     letter-spacing: -1px;
+}
+
+h2{
+    font: 700 48px/48px 'LeagueSpartan-Bold';
+    letter-spacing: -0.5px;
 }
 
 .mediumText{
