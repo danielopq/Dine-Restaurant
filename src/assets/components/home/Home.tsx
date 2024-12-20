@@ -1,5 +1,5 @@
 import './home.css';
-import { HomeHeader, EnjoyablePlace, LocallySourcedFood, Highlights, Slide } from './components'
+import { HomeHeader, EnjoyablePlace, LocallySourcedFood, Highlights, Slide, Footer } from './components'
 const Home: React.FC = () => {
     return (
         <main id="home">
@@ -8,6 +8,7 @@ const Home: React.FC = () => {
             <LocallySourcedFood />
             <Highlights />
             <Slide />
+            <Footer />
         </main>
     )
 }

@@ -3,3 +3,4 @@ export {default as EnjoyablePlace} from "./enjoyablePlace/EnjoyablePlace";
 export {default as LocallySourcedFood} from "./locallySourcedFood/LocallySourcedFood";
 export {default as Highlights} from "./highlights/Highlights";
 export {default as Slide} from "./slide/Slide";
+export {default as Footer} from "./footer/Footer";
