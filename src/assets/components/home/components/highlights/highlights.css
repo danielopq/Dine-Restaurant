@@ -1,5 +1,66 @@
 #highlights{
     width: inherit;
     height: 761px;
+    padding: 200px 165px 0px;
     background-color: var(--CodGrey);
+}
+
+#highlights > div{
+    width: 1110px;
+    height: 441px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#highlights-content{
+    width: 467px;
+    height: inherit;
+    color: white;
+    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+}
+
+#highlights-content h2 {
+    margin: 62px 0px 27px;
+}
+
+#highlights-dishes{
+    width: 540px;
+    height: inherit;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+.dish{
+    width: inherit;
+    height: 96px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.dish-separator{
+    width: inherit;
+    height: 1px;
+    background-color: #979797;
+}
+
+.dish-pic{
+    width: 160px;
+    height: inherit;
+    background-size: 128px;
+    background-position: left;
+    background-repeat: no-repeat;
+    border: solid 1px red;
+}
+
+.dish-content{
+    width: 350px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
