@@ -3,6 +3,7 @@
     height: 650px;
     padding-left: 165px;
     display: inline-flex;
+    background: url('./img/pattern.svg') 0px 250px/895px no-repeat;
     border:solid 1px red;
 }
 
@@ -10,5 +11,5 @@
     width: 540px;
     height: 720px;
     margin-top: -70px;
-    background: url(./img/enjoyable-place-desktop.jpg) -223px -466px/955px no-repeat;
+    background: url('./img/enjoyable-place-desktop.jpg') -223px -466px/955px no-repeat;
 }
