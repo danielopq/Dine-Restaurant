@@ -1,5 +1,20 @@
 #slide{
     width: inherit;
     height: 920px;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url('../../../../img/pattern-curve-bottom-right.svg') -350px 0px/895px no-repeat;
+}
+
+#slideImages{
+    width: 540px;
+    height: 600px;
+}
+
+#slide-content{
+    width: 570px;
+    height: 600px;
     border: solid 1px red;
 }
