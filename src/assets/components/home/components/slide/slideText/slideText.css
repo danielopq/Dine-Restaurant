@@ -1,0 +1,14 @@
+.slideText{
+    width: 445px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    position: absolute;
+    color: var(--EbonyClay);
+    border: solid 1px green;
+}
+
+.slideText h2{
+    margin-bottom: 19px;
+}
