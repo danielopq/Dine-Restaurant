@@ -13,8 +13,16 @@
     height: 600px;
 }
 
-#slide-content{
+#slide-navigator{
     width: 570px;
     height: 600px;
+    padding: 0px 0px 62px 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     border: solid 1px red;
+}
+
+#slide-navigator button{
+    width: 245px;
 }
