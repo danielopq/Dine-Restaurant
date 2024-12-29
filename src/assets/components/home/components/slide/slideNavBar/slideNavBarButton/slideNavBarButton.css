@@ -1,0 +1,36 @@
+.slideNavBarButton{
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font: 600 17px/28px 'LeagueSpartan-SemiBold';
+    letter-spacing: 2.5;
+}
+
+.snb-line{
+    width: 95px;
+    height: 1px;
+    margin-right: 32px;
+}
+
+.slideNavBarButton div:last-child{
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.snb-disabled{
+    color: rgb(76,76,76)
+}
+
+.snb-enabled{
+    color: rgba(76,76,76,0.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    .snb-enabled:hover{
+        color: rgba(76,76,76,1);
+    }
+}
