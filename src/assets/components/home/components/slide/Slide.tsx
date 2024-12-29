@@ -21,7 +21,9 @@ const Slide:React.FC = ()=>{
                 <SlidePicture/>
             </div>
             <div id="slide-navigator">
-                <SlideText/>
+                <SlideText title='Family Gathering' visible={displayedEvents[0]}/>
+                <SlideText title='Special Events' visible={displayedEvents[1]}/>
+                <SlideText title='Social Events' visible={displayedEvents[2]}/>
                 <DefaultButton text='BOOK A TABLE' buttonType='darkBt'/>
                 <SlideNavBar displayedEvents={displayedEvents} setSlide={setSlide}/>
             </div>
