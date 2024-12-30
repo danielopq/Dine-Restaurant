@@ -1,10 +1,12 @@
 import './App.css'
-import Home from './assets/components/home/Home'
+import Home from './assets/components/home/Home';
+import Reservations from './assets/components/reservations/Reservations';
 
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <Reservations />
     </>
   )
 }
