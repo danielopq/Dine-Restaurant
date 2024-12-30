@@ -1,5 +1,16 @@
 .slidePicture{
     width: 540px;
     height: 600px;
-    border: solid 1px blue;
+    position:absolute;
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s ease;
+}
+
+.slidePicture > div{
+    width: 160px;
+    height: 76px;
+    margin: -38px 0px 0px -40px;
+    background: url('./img/pattern-lines.svg') center/160px no-repeat;
 }

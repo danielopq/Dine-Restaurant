@@ -21,7 +21,6 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    border: solid 1px red;
 }
 
 #slide-navigator button{
