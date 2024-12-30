@@ -1,4 +1,34 @@
 #reservationsHeader{
     width: inherit;
     height: 919px;
+    padding: 0px 165px;
+    display: inline-flex;
+    justify-content: space-between;
+    background:
+    url('../../../img/pattern-lines.svg') 50% 766px/160px no-repeat,
+    url('./img/ReservationsHeader-desktop.jpg') top/1440px no-repeat,
+    url('../../../img/pattern-curve-bottom-right.svg') 0% 100%/993px no-repeat;
+}
+
+#reservations-text{
+    width: 445px;
+    height: 381px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url('../../../img/logo.svg') 0% 0%/103px no-repeat;
+    color: white;
+}
+
+#reservations-text p{
+    margin-top: 18px;
+}
+
+#reservations-form{
+    width: 540px;
+    height: 560px;
+    margin-top: 258px;
+    background-color: white;
+    border: solid 1px red; 
 }
