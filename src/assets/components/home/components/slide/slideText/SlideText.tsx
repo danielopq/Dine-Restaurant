@@ -3,20 +3,27 @@ import './slideText.css';
 
 interface SlideTextProps{
     title:string;
-    // text:string;
-    // zIndex:number;
+    text:string;
     visible:boolean;
 }
 
-const SlideText: React.FC<SlideTextProps> = ({title,visible}) => {
+/**
+ * SlideText Component
+ * 
+ * Displays a title and text for an event type offered by the restaurant. 
+ * The component adjusts its visibility based on the `visible` property.
+ * 
+ * @param {Object} props - Component properties
+ * @param {string} props.title - The title of the event
+ * @param {string} props.text - The description text of the event
+ * @param {boolean} props.visible - Whether the component is visible or not
+ * @returns {JSX.Element} SlideText component
+ */
+const SlideText: React.FC<SlideTextProps> = ({title,visible,text}) => {
     return (
         <div className='slideText' style={{opacity:visible ? '1' : '0'}}>
             <h2>{title}</h2>
-            <p className='mediumText'>
-                We love catering for entire families. So please bring everyone
-                along for a special meal with your loved ones. We’ll provide a
-                memorable experience for all.
-            </p>
+            <p className='mediumText'>{text}</p>
         </div>
     )
 }
