@@ -7,6 +7,18 @@ interface SlideNavBarProps{
     setSlide:(slideEvent:number)=>void;
 }
 
+/**
+ * SlideNavBar Component
+ * 
+ * Renders a navigation bar for navigating through different events offered by the restaurant.
+ * Each button in the navigation bar corresponds to a specific event type.
+ * 
+ * @component
+ * @param {SlideNavBarProps} props - The properties for the SlideNavBar component.
+ * @param {boolean[]} props.displayedEvents - An array indicating which buttons are active (true for active, false for inactive).
+ * @param {function} props.setSlide - A function to update and display the selected event.
+ * @returns {JSX.Element} The SlideNavBar component.
+ */
 const SlideNavBar:React.FC<SlideNavBarProps> = ({displayedEvents,setSlide}) => {
     return (
         <nav id="slideNavBar">
