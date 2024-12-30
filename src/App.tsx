@@ -5,8 +5,8 @@ import Reservations from './assets/components/reservations/Reservations';
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Reservations />
+      <Home />
+      {/* <Reservations /> */}
     </>
   )
 }

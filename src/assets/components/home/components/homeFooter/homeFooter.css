@@ -1,0 +1,20 @@
+footer{
+    width: inherit;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+#footerTop{
+    width: inherit;
+    height: 240px;
+    padding: 99px 165px 0px;
+    display:inline-flex;
+    justify-content: space-between;
+    background: url('./img/ready-bg-desktop.jpg') center/1440px no-repeat;
+}
+
+#footerTop button{
+    width: 245px;
+}
