@@ -6,6 +6,14 @@ interface SlideEvent{
     mobilePic:string;
 }
 
+/**
+ * SlideEvents
+ * 
+ * Contains an array of event details offered by the restaurant. 
+ * Each event includes a title, descriptive text, and image URLs for different device types 
+ * (desktop, tablet, and mobile).
+ */
+
 const SlideEvents:SlideEvent[] = [
     {
         title:'Family Gathering',
