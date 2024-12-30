@@ -41,6 +41,11 @@ body{
     align-items: center;
 }
 
+header{
+    margin:0px;
+    padding: 0px;
+}
+
 button{
     cursor:pointer;
 }

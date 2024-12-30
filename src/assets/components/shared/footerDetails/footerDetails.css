@@ -6,6 +6,7 @@
     background: var(--CodGrey) url('../../../img/logo.svg') 165px 78px/103px no-repeat;
     font: 400 16px/26px 'LeagueSpartan-Regular';
     letter-spacing: 2px;
+    color:white;
 }
 
 #footerDetails > div{
