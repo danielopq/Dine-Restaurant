@@ -1,17 +1,44 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './slide.css';
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
-
 import { SlideEvents, SlidePicture, SlideNavBar, SlideText } from './index';
 
+/**
+ * Slide Component
+ * 
+ * Displays a slideshow featuring different events offered by the restaurant. 
+ * The component includes images, descriptive text, and navigation options for users 
+ * to manually or automatically transition between slides.
+ * 
+ * @returns {JSX.Element} The Slide component containing the slideshow.
+ */
 const Slide: React.FC = () => {
+    const [currentEvent,setCurrentEvent] = useState<number>(0);
     const [displayedEvents, setDisplayedEvents] = useState<boolean[]>([true, false, false]);
 
+    /**
+     * Updates the current slide and sets the visibility of the corresponding event.
+     * 
+     * @param {number} slideEvent - The index of the event to display.
+     */
     const setSlide = (slideEvent: number): void => {
         const newDisplayedEvents: boolean[] = [false, false, false];
         newDisplayedEvents[slideEvent] = true;
         setDisplayedEvents(newDisplayedEvents);
+        setCurrentEvent(slideEvent);
     }
+
+    /**
+     * Automatically transitions to the next slide at a set interval.
+     * If the current slide is the last one, it loops back to the first slide.
+     */
+    useEffect(() => {
+        const runSlide = () => {
+            (currentEvent === displayedEvents.length - 1) ? setSlide(0) : setSlide(currentEvent + 1);
+        };
+        const intervalId = setInterval(runSlide, 5000);
+        return () => clearInterval(intervalId);
+    }, [currentEvent]);
 
     return (
         <section id="slide">
