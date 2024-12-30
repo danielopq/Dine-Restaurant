@@ -1,6 +1,6 @@
 import './slideNavBar.css';
+import SlideNavBarButton from './slideNavBarButton/SlideNavBarButton';
 
-import SlideNavBarButton from './slideNavBarButton/slideNavBarButton';
 
 interface SlideNavBarProps{
     displayedEvents:boolean[];
