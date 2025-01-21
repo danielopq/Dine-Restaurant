@@ -1,4 +1,5 @@
 import './reservationsHeader.css';
+import BookingForm from './bookingForm/BookingForm';
 
 const ReservationsHeader: React.FC = () => {
     return (
@@ -10,7 +11,7 @@ const ReservationsHeader: React.FC = () => {
                     free to call on the phone number below. We’ll be happy to accommodate you.
                 </p>
             </div>
-            <div id="reservations-form"></div>
+            <BookingForm/>
         </header>
     )
 }
