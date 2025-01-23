@@ -1,16 +1,21 @@
 import './bookingForm.css';
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
+import { useRef } from 'react';
 
 const BookingForm: React.FC = () => {
+    const refName = useRef<HTMLInputElement>(null);
+    const refEmail = useRef<HTMLInputElement>(null);
+    const refNameError = useRef<HTMLParagraphElement>(null);
+    const refEmailError = useRef<HTMLParagraphElement>(null);
     return (
         <div id="bookingForm">
-            <div className='formLine'>
-                <input id="" type='text' placeholder='Name'></input>
-                <p></p>
+            <div id="nameLine" className='formLine'>
+                <input ref={refName} id="name" type='text' placeholder='Name'></input>
+                <p ref={refNameError}>This field is required</p>
             </div>
-            <div className='formLine'>
-                <input id="" type='text' placeholder='Email'></input>
-                <p></p>
+            <div id="emailLine" className='formLine'>
+                <input ref={refEmail} id="email" type='text' placeholder='Email'></input>
+                <p ref={refEmailError}>This field is required</p>
             </div>
             <div className='formLine'>
                 <p>Pick a date</p>
