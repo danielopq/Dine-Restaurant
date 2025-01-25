@@ -17,13 +17,13 @@ const BookingForm: React.FC = () => {
                 </div>
                 <div id="dateLine" className='formLine'>
                     <div>
-                        <p>Pick a date</p>
+                        <p id="pickDate">Pick a date</p>
                         <p id="dateError" className='error'></p>
                     </div>
                     <div>
-                        <input id="day" className="shortInput valid" type='text' placeholder='DD'></input>
-                        <input id="month" className="shortInput valid" type='text' placeholder='MM'></input>
-                        <input id="year" className="longInput valid" type='text' placeholder='YYYY'></input>
+                        <input id="day" className="shortInput valid" type='text' placeholder='DD' maxLength={2}></input>
+                        <input id="month" className="shortInput valid" type='text' placeholder='MM' maxLength={2}></input>
+                        <input id="year" className="longInput valid" type='text' placeholder='YYYY' maxLength={4}></input>
                     </div>
                 </div>
                 <div id="timeLine" className='formLine'>
@@ -32,9 +32,9 @@ const BookingForm: React.FC = () => {
                         <p id="timeError" className='error'></p>
                     </div>
                     <div>
-                        <input id="day" className="shortInput valid" type='text' placeholder='HH'></input>
-                        <input id="month" className="shortInput valid" type='text' placeholder='MM'></input>
-                        <input id="year" className="longInput valid" type='text' placeholder='AM'></input>
+                        <input id="hour" className="shortInput valid" type='text' placeholder='HH' maxLength={2}></input>
+                        <input id="minutes" className="shortInput valid" type='text' placeholder='MM' maxLength={2}></input>
+                        <input id="dayTime" className="longInput valid" type='text' placeholder='AM'></input>
                         <button id="dayTimeBt"></button>
                         <div id="dayTimeselect">
                             <button id="am-button" className='selectButton'>AM</button>
