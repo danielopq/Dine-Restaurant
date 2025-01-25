@@ -54,9 +54,9 @@ const BookingForm: React.FC = () => {
             </div>
 
             <div id="guestsLine" className='formLine'>
-                <p>-</p>
+                <button id="restPeopleBt" className='setPeopleBt'></button>
                 <p>4 people</p>
-                <p>+</p>
+                <button id="addPeopleBt" className='setPeopleBt'></button>
             </div>
             <DefaultButton text='MAKE RESERVATION' buttonType='darkBt' />
         </div>
