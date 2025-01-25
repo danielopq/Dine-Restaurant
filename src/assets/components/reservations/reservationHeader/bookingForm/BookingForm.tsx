@@ -31,9 +31,9 @@ const BookingForm: React.FC = () => {
                     <p ref={refDateError} className='error'></p>
                 </div>
                 <div>
-                    <input ref={refDay} id="day" type='text' placeholder='DD'></input>
-                    <input ref={refMonth} id="month" type='text' placeholder='MM'></input>
-                    <input ref={refYear} id="year" type='text' placeholder='YYYY'></input>
+                    <input ref={refDay} id="day" className="shortInput" type='text' placeholder='DD'></input>
+                    <input ref={refMonth} id="month" className="shortInput" type='text' placeholder='MM'></input>
+                    <input ref={refYear} id="year" className="longInput" type='text' placeholder='YYYY'></input>
                 </div>
             </div>
             <div id="timeLine" className='formLine'>
@@ -42,9 +42,11 @@ const BookingForm: React.FC = () => {
                     <p ref={refTimeError} className='error'></p>
                 </div>
                 <div>
-                    <input ref={refHour} id="day" type='text' placeholder='HH'></input>
-                    <input ref={refMinutes} id="month" type='text' placeholder='MM'></input>
-                    <input ref={refDayTime} id="year" type='text' placeholder='AM'></input>
+                    <input ref={refHour} id="day" className="shortInput" type='text' placeholder='HH'></input>
+                    <input ref={refMinutes} id="month" className="shortInput" type='text' placeholder='MM'></input>
+                    <input ref={refDayTime} id="year" className="longInput" type='text' placeholder='AM'></input>
+                    <button id="dayTimeBt"></button>
+                    <div id="dayTimeselect"></div>
                 </div>
             </div>
 
