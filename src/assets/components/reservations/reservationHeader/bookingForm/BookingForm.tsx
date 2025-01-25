@@ -46,7 +46,10 @@ const BookingForm: React.FC = () => {
                     <input ref={refMinutes} id="month" className="shortInput" type='text' placeholder='MM'></input>
                     <input ref={refDayTime} id="year" className="longInput" type='text' placeholder='AM'></input>
                     <button id="dayTimeBt"></button>
-                    <div id="dayTimeselect"></div>
+                    <div id="dayTimeselect">
+                        <button id="am-button" className='selectButton'>AM</button>
+                        <button id="pm-button" className='selectButton'>PM</button>
+                    </div>
                 </div>
             </div>
 
