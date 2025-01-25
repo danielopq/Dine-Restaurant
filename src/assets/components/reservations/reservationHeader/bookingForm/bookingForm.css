@@ -1,4 +1,4 @@
-#bookingForm{
+#bookingForm {
     width: 540px;
     min-height: 545px;
     height: auto;
@@ -8,10 +8,10 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
-.formLine{
+.formLine {
     width: 100%;
     height: 43px;
     margin-top: 34px;
@@ -19,36 +19,41 @@
     font: 400 20px/28px 'LeagueSpartan-Regular';
 }
 
-#nameLine,#emailLine{
+#nameLine,
+#emailLine {
     display: flex;
     flex-direction: column;
 }
 
-#nameLine p,#emailLine p{
+#nameLine p,
+#emailLine p {
     margin: 12px 0px 0px 16px;
 }
 
-#dateLine,#timeLine,#guestsLine{
+#dateLine,
+#timeLine,
+#guestsLine {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#dateLine > div:last-child,#timeLine > div:last-child{
+#dateLine>div:last-child,
+#timeLine>div:last-child {
     width: 289px;
     display: inline-flex;
     justify-content: space-between;
 }
 
-.shortInput{
+.shortInput {
     max-width: 80px;
 }
 
-.longInput{
+.longInput {
     max-width: 97px;
 }
 
-#dayTimeBt{
+#dayTimeBt {
     width: 16px;
     height: 8px;
     position: absolute;
@@ -57,7 +62,7 @@
     border: none;
 }
 
-#dayTimeselect{
+#dayTimeselect {
     width: 106px;
     height: 103px;
     padding: 18px 0px 13px 16px;
@@ -68,10 +73,10 @@
     position: absolute;
     z-index: 2;
     background-color: white;
-    box-shadow: 0px 15px 25px 0px rgba(56,66,85,0.24);
+    box-shadow: 0px 15px 25px 0px rgba(56, 66, 85, 0.24);
 }
 
-.selectButton{
+.selectButton {
     width: 60px;
     height: 28px;
     padding: 0px 0px 0px 26px;
@@ -83,39 +88,57 @@
     color: var(--CodGrey);
 }
 
-#guestsLine{
+#guestsLine {
     padding: 0px 30px 0px;
     align-items: flex-start;
 }
 
-.setPeopleBt{
+.setPeopleBt {
     width: 24px;
-    height:24px;
+    height: 24px;
     border: none;
     transition: opacity 0.3s ease;
 }
 
-@media(hover:hover){
-    .setPeopleBt:hover{
+@media(hover:hover) {
+    .setPeopleBt:hover {
         opacity: 50%;
     }
 }
 
-#restPeopleBt{
+#restPeopleBt {
     background: url('./img/icon-minus.svg') transparent center/6px no-repeat;
 }
 
-#addPeopleBt{
+#addPeopleBt {
     background: url('./img/icon-plus.svg') transparent center/9px no-repeat;
 }
 
-#bookingForm > button{
+#bookingForm>button {
     width: 444px;
     margin: 32px 0px 0px;
 }
 
-.error{
+.error {
     font: 500 10px/9px 'LeagueSpartan-Medium';
     letter-spacing: -0.13px;
     color: var(--Red);
+}
+
+.valid {
+    color: var(--CodGrey);
+    border-bottom: solid 1px var(--CodGrey);
+}
+
+.valid::placeholder {
+    color: rgba(17, 17, 17, 0.5);
+}
+
+.invalid {
+    color: rgba(181,73,73,0.5);
+    border-bottom: solid 1px rgba(181,73,73);
+}
+
+.invalid::placeholder {
+    color: rgba(181,73,73,0.5);
 }

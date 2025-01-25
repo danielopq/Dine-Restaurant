@@ -8,11 +8,11 @@ const BookingForm: React.FC = () => {
         <form id="bkForm" onSubmit={handleForm}>
             <div id="bookingForm">
                 <div id="nameLine" className='formLine'>
-                    <input id="name" type='text' placeholder='Name'></input>
+                    <input id="name" type='text' placeholder='Name'  className='valid'></input>
                     <p id="nameError" className='error'></p>
                 </div>
                 <div id="emailLine" className='formLine'>
-                    <input id="email" type='text' placeholder='Email'></input>
+                    <input id="email" type='text' placeholder='Email' className='valid'></input>
                     <p id="emailError" className='error'></p>
                 </div>
                 <div id="dateLine" className='formLine'>
@@ -21,9 +21,9 @@ const BookingForm: React.FC = () => {
                         <p id="dateError" className='error'></p>
                     </div>
                     <div>
-                        <input id="day" className="shortInput" type='text' placeholder='DD'></input>
-                        <input id="month" className="shortInput" type='text' placeholder='MM'></input>
-                        <input id="year" className="longInput" type='text' placeholder='YYYY'></input>
+                        <input id="day" className="shortInput valid" type='text' placeholder='DD'></input>
+                        <input id="month" className="shortInput valid" type='text' placeholder='MM'></input>
+                        <input id="year" className="longInput valid" type='text' placeholder='YYYY'></input>
                     </div>
                 </div>
                 <div id="timeLine" className='formLine'>
@@ -32,9 +32,9 @@ const BookingForm: React.FC = () => {
                         <p id="timeError" className='error'></p>
                     </div>
                     <div>
-                        <input id="day" className="shortInput" type='text' placeholder='HH'></input>
-                        <input id="month" className="shortInput" type='text' placeholder='MM'></input>
-                        <input id="year" className="longInput" type='text' placeholder='AM'></input>
+                        <input id="day" className="shortInput valid" type='text' placeholder='HH'></input>
+                        <input id="month" className="shortInput valid" type='text' placeholder='MM'></input>
+                        <input id="year" className="longInput valid" type='text' placeholder='AM'></input>
                         <button id="dayTimeBt"></button>
                         <div id="dayTimeselect">
                             <button id="am-button" className='selectButton'>AM</button>
