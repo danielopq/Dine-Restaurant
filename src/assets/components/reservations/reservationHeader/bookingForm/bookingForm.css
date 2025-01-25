@@ -1,19 +1,20 @@
 #bookingForm{
     width: 540px;
-    height: auto;
     min-height: 545px;
-    padding: 50px 48px 48px;
+    height: auto;
+    padding: 16px 48px 0px;
     margin-top: 258px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
+    box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
 }
 
 .formLine{
     width: 100%;
     height: 43px;
+    margin-top: 34px;
     color: var(--CodGrey);
     font: 400 20px/28px 'LeagueSpartan-Regular';
 }
@@ -84,6 +85,7 @@
 
 #guestsLine{
     padding: 0px 30px 0px;
+    align-items: flex-start;
 }
 
 .setPeopleBt{
@@ -100,15 +102,16 @@
 }
 
 #restPeopleBt{
-    background: url('./img/icon-minus.svg') transparent center/8px no-repeat;
+    background: url('./img/icon-minus.svg') transparent center/6px no-repeat;
 }
 
 #addPeopleBt{
-    background: url('./img/icon-plus.svg') transparent center/11px no-repeat;
+    background: url('./img/icon-plus.svg') transparent center/9px no-repeat;
 }
 
 #bookingForm > button{
     width: 444px;
+    margin: 32px 0px 0px;
 }
 
 .error{

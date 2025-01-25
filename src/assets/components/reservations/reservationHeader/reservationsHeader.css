@@ -2,7 +2,8 @@
     width: inherit;
     height: 919px;
     padding: 0px 165px;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background:
     url('../../../img/pattern-lines.svg') 50% 766px/160px no-repeat,
@@ -21,6 +22,6 @@
     color: white;
 }
 
-#reservations-text p{
+#reservations-text > p{
     margin-top: 18px;
 }
