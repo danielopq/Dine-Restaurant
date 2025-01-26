@@ -58,8 +58,19 @@
     height: 8px;
     position: absolute;
     margin: 7px 257px 0px;
-    background: transparent url('./img/arrow-down.svg') center/16px no-repeat;
     border: none;
+    background-color: transparent;
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+.arrowUp{
+    background-image: url('./img/arrow-up.svg');
+}
+
+.arrowDown{
+    background-image: url('./img/arrow-down.svg');
 }
 
 #dayTimeselect {
@@ -67,7 +78,6 @@
     height: 103px;
     padding: 18px 0px 13px 16px;
     margin: 51px 192px 0px;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;

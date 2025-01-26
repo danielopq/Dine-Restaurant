@@ -4,13 +4,12 @@ interface BookingDate {
     year: HTMLInputElement | null;
 }
 
-const handleForm = (event: React.FormEvent<HTMLFormElement>): void => {
+export const handleForm = (event: React.FormEvent<HTMLFormElement>): void => {
     let validated = true;
     event.preventDefault();
     !validateName() && (validated = false);
     !validateEmail() && (validated = false);
     !validateDate() && (validated = false);
-    console.log(validated);
 }
 
 const validateName = (): boolean => {
@@ -136,5 +135,3 @@ const isFutureDate = (day: number, month: number, year: number): boolean => {
     today.setHours(0, 0, 0, 0);
     return inputDate >= today;
 }
-
-export default handleForm;

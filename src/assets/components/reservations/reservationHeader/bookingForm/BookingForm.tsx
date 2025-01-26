@@ -1,5 +1,6 @@
 import './bookingForm.css';
-import handleForm from './services/handleForm';
+import {handleForm,showSelect} from './services';
+
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 
 const BookingForm: React.FC = () => {
@@ -34,9 +35,9 @@ const BookingForm: React.FC = () => {
                     <div>
                         <input id="hour" className="shortInput valid" type='text' placeholder='HH' maxLength={2}></input>
                         <input id="minutes" className="shortInput valid" type='text' placeholder='MM' maxLength={2}></input>
-                        <input id="dayTime" className="longInput valid" type='text' placeholder='AM'></input>
-                        <button id="dayTimeBt"></button>
-                        <div id="dayTimeselect">
+                        <input id="dayTime" className="longInput valid" type='text' placeholder='AM' readOnly disabled></input>
+                        <button id="dayTimeBt" className="arrowDown" onClick={showSelect}></button>
+                        <div id="dayTimeselect" style={{display:'none'}}>
                             <button id="am-button" className='selectButton'>AM</button>
                             <button id="pm-button" className='selectButton'>PM</button>
                         </div>
