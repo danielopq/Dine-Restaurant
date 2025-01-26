@@ -17,6 +17,7 @@ export const handleForm = (event: React.FormEvent<HTMLFormElement>): void => {
     !validateEmail() && (validated = false);
     !validateDate() && (validated = false);
     !validateTime() && (validated = false);
+    !validatePeople() && (validated = false);
 }
 
 /* ################### FORM VALIDATING FUNCTIONS ################### */
@@ -42,7 +43,7 @@ const validateName = (): boolean => {
 
 const validateEmail = (): boolean => {
     let validated = false;
-    let messageError: string = 'xz';
+    let messageError: string = '';
 
     const email = document.getElementById('email') as HTMLInputElement | null;
     const emailError = document.getElementById('emailError') as HTMLInputElement | null;
@@ -172,7 +173,7 @@ const validateTime = (): boolean => {
                 });
                 validated = false;
                 messageError = 'Bookings 9:00 am - 9:30 pm';
-            } 
+            }
         }
 
         pickTime.style.color = validated ? 'var(--CodGrey)' : 'var(--Red)';
@@ -182,6 +183,17 @@ const validateTime = (): boolean => {
     return validated;
 }
 
+const validatePeople = (): boolean => {
+    const people = document.getElementById('people') as HTMLParagraphElement;
+    const guestsNumber = document.getElementById('guestsNumber') as HTMLSpanElement;
+    if (guestsNumber.innerHTML === '0') {
+        people.style.color = 'var(--Red)';
+        return false;
+    } else {
+        people.style.color = 'var(--CodGrey)';
+        return true;
+    }
+}
 
 /** ################### COMMON FUNCTIONS ###################*/
 

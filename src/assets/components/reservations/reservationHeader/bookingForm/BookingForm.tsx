@@ -36,18 +36,18 @@ const BookingForm: React.FC = () => {
                         <input id="hour" className="shortInput valid" type='text' placeholder='HH' maxLength={2}></input>
                         <input id="minutes" className="shortInput valid" type='text' placeholder='MM' maxLength={2}></input>
                         <input id="dayTime" className="longInput valid" type='text' placeholder='-' readOnly disabled></input>
-                        <button id="dayTimeBt" className="arrowDown" onClick={showSelect}></button>
+                        <button id="dayTimeBt" type="button" className="arrowDown" onClick={showSelect}></button>
                         <div id="dayTimeselect" style={{display:'none'}}>
-                            <button id="am-button" className='selectButton' onClick={selectDaytime}>AM</button>
-                            <button id="pm-button" className='selectButton' onClick={selectDaytime}>PM</button>
+                            <button id="am-button" type="button" className='selectButton' onClick={selectDaytime}>AM</button>
+                            <button id="pm-button" type="button" className='selectButton' onClick={selectDaytime}>PM</button>
                         </div>
                     </div>
                 </div>
 
                 <div id="guestsLine" className='formLine'>
-                    <button id="restPeopleBt" className='setPeopleBt' onClick={handleGuests}></button>
+                    <button id="restPeopleBt" type="button" className='setPeopleBt' onClick={handleGuests}></button>
                     <p id="people"><span id="guestsNumber">0</span> people</p>
-                    <button id="addPeopleBt" className='setPeopleBt' onClick={handleGuests}></button>
+                    <button id="addPeopleBt" type="button" className='setPeopleBt' onClick={handleGuests}></button>
                 </div>
                 <DefaultButton text='MAKE RESERVATION' buttonType='darkBt' />
             </div>

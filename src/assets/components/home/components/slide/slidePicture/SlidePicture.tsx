@@ -36,7 +36,6 @@ const SlidePicture: React.FC<SlidePictureProps> = ({ visible, desktopPic, tablet
         const isDesktop = window.innerWidth >= 1024;
         const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
         setBackgroundImage(isDesktop ? desktopPic : isTablet ? tabletPic : mobilePic);
-        console.log(backgroundImage);
     };
 
     useEffect(() => {
