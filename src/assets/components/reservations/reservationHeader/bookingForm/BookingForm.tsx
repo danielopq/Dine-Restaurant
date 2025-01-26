@@ -29,7 +29,7 @@ const BookingForm: React.FC = () => {
                 </div>
                 <div id="timeLine" className='formLine'>
                     <div>
-                        <p>Pick a time</p>
+                        <p id="pickTime">Pick a time</p>
                         <p id="timeError" className='error'></p>
                     </div>
                     <div>
