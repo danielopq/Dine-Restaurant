@@ -1,5 +1,5 @@
 import './bookingForm.css';
-import {handleForm,showSelect,selectDaytime} from './services';
+import {handleForm,showSelect,selectDaytime,handleGuests} from './services';
 
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 
@@ -45,9 +45,9 @@ const BookingForm: React.FC = () => {
                 </div>
 
                 <div id="guestsLine" className='formLine'>
-                    <button id="restPeopleBt" className='setPeopleBt'></button>
-                    <p>4 people</p>
-                    <button id="addPeopleBt" className='setPeopleBt'></button>
+                    <button id="restPeopleBt" className='setPeopleBt' onClick={handleGuests}></button>
+                    <p id="people"><span id="guestsNumber">0</span> people</p>
+                    <button id="addPeopleBt" className='setPeopleBt' onClick={handleGuests}></button>
                 </div>
                 <DefaultButton text='MAKE RESERVATION' buttonType='darkBt' />
             </div>
