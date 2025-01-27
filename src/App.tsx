@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './assets/components/home/Home';
 import Reservations from './assets/components/reservations/Reservations';
@@ -5,8 +6,10 @@ import Reservations from './assets/components/reservations/Reservations';
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Reservations />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservation" element={<Reservations />} />
+      </Routes>
     </>
   )
 }
