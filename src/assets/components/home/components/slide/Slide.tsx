@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './slide.css';
+import NavigateTo from '../../../../services/NavigateTo';
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 import { SlideEvents, SlidePicture, SlideNavBar, SlideText } from './index';
 
@@ -66,7 +67,7 @@ const Slide: React.FC = () => {
                 <SlideText title={SlideEvents[0].title} text={SlideEvents[0].text} visible={displayedEvents[0]} />
                 <SlideText title={SlideEvents[1].title} text={SlideEvents[1].text} visible={displayedEvents[1]} />
                 <SlideText title={SlideEvents[2].title} text={SlideEvents[2].text} visible={displayedEvents[2]} />
-                <DefaultButton text='BOOK A TABLE' buttonType='darkBt' />
+                <DefaultButton text='BOOK A TABLE' buttonStyle='darkBt' handleClick={NavigateTo('/reservation')}/>
                 <SlideNavBar displayedEvents={displayedEvents} setSlide={setSlide} />
             </div>
         </section>

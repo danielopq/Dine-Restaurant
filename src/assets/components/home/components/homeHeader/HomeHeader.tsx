@@ -1,4 +1,5 @@
 import './homeHeader.css';
+import NavigateTo from '../../../../services/NavigateTo';
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 
 const HomeHeader: React.FC = () => {
@@ -10,7 +11,7 @@ const HomeHeader: React.FC = () => {
                     Experience our seasonal menu in beautiful country surroundings.
                     Eat the freshest produce from the comfort of our farmhouse.
                 </p>
-                <DefaultButton text='BOOK A TABLE' buttonType='lightBt'/>
+                <DefaultButton text='BOOK A TABLE' buttonStyle='lightBt' handleClick={NavigateTo('/reservation')}/>
             </div>
         </header>
     )

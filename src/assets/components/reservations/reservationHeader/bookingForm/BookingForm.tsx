@@ -49,7 +49,7 @@ const BookingForm: React.FC = () => {
                     <p id="people"><span id="guestsNumber">0</span> people</p>
                     <button id="addPeopleBt" type="button" className='setPeopleBt' onClick={handleGuests}></button>
                 </div>
-                <DefaultButton text='MAKE RESERVATION' buttonType='darkBt' />
+                <DefaultButton text='MAKE RESERVATION' buttonStyle='darkBt' buttonType='submit' />
             </div>
         </form>
     )
