@@ -2,6 +2,11 @@ import './homeHeader.css';
 import NavigateTo from '../../../../services/NavigateTo';
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 
+/**
+ * HomeHeader component that renders the header section of the home page.
+ * 
+ * @returns {JSX.Element} The HomeHeader component.
+ */
 const HomeHeader: React.FC = () => {
     return (
         <header id="homeHeader">
