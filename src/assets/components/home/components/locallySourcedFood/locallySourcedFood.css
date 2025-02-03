@@ -1,4 +1,4 @@
-#locallySourcedFood{
+#locallySourcedFood {
     width: inherit;
     height: 720px;
     display: inline-flex;
@@ -7,30 +7,72 @@
     z-index: 1;
 }
 
-#lsf-content{
+#lsf-content {
     width: 445px;
     height: 275px;
     margin: 231px 125px 0px 165px;
     color: var(--EbonyClay);
-    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+    background: url('../../../../img/pattern-divide.svg') 0% 0%/71px no-repeat;
 }
 
-#lsf-content h2{
+#lsf-content h2 {
     padding-right: 40px;
-    margin: 62px 0px 27px 0px;
+    margin: 62px 0px 27px;
 }
 
-#lsf-Pic{
+#lsf-Pic {
     width: 654px;
     height: 720px;
     margin-top: 90px;
     background: url('./img/locally-sourced-desktop.jpg') left/540px no-repeat;
 }
 
-#lsf-Pic div{
+#lsf-Pic div {
     width: 160px;
     height: 76px;
     margin-top: 282px;
-    float:right;
+    float: right;
     background: url('../../../../img/pattern-lines.svg') center/160px no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #locallySourcedFood {
+        height: 793px;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 118px;
+        background: url('../../../../img/pattern-curve-top-left.svg') 384px 100%/895px no-repeat;
+    }
+
+    #lsf-content {
+        width: 457px;
+        height: 259px;
+        margin: 56px 0px 0px;
+        background: url('../../../../img/pattern-divide.svg') 50% 0%/71px no-repeat;
+        text-align: center;
+    }
+
+    #lsf-content h2 {
+        padding-right: 0px;
+        margin: 39px 0px 27px;
+    }
+
+    #lsf-Pic {
+        width: 689px;
+        height: 360px;
+        margin-top: 0px;
+        background: url('./img/locally-sourced-tablet.jpg') top/573px no-repeat;
+    }
+
+    #lsf-Pic div {
+        margin-top: 228px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
