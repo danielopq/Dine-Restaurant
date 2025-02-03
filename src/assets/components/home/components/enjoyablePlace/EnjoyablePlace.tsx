@@ -1,6 +1,5 @@
 import './enjoyablePlace.css';
 
-
 /**
  * Represents the 'EnjoyablePlace' section of the website.
  * 

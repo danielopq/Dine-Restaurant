@@ -1,4 +1,4 @@
-#enjoyablePlace{
+#enjoyablePlace {
     width: inherit;
     height: 650px;
     padding-left: 165px;
@@ -6,22 +6,60 @@
     background: url('../../../../img/pattern-curve-top-right.svg') 0px 250px/895px no-repeat;
 }
 
-#enjoyablePlace-pic{
+#enjoyablePlace-pic {
     width: 540px;
     height: 720px;
     margin-top: -70px;
     background: url('./img/enjoyable-place-desktop.jpg') -223px -466px/955px no-repeat;
+    box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
 }
 
-#enjoyablePlace-content{
+#enjoyablePlace-content {
     width: 445px;
     height: 275px;
     margin: 177px 0px 0px 125px;
     color: var(--EbonyClay);
-    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+    background: url('../../../../img/pattern-divide.svg') 0% 0%/71px no-repeat;
 }
 
-#enjoyablePlace-content h2{
+#enjoyablePlace-content h2 {
     padding-right: 40px;
     margin: 62px 0px 27px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #enjoyablePlace {
+        height: 675px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url('../../../../img/pattern-curve-top-right.svg') -517px 100px/895px no-repeat;
+    }
+
+    #enjoyablePlace-pic {
+        width: 573px;
+        height: 360px;
+        margin-top: -96px;
+        background: url('./img/enjoyable-place-tablet.jpg') 50% 0%/573px no-repeat;
+    }
+
+    #enjoyablePlace-content {
+        width: 457px;
+        height: 213px;
+        margin: 56px 0px 0px;
+        background: url('../../../../img/pattern-divide.svg') 50% 0%/71px no-repeat;
+        text-align: center;
+    }
+
+    #enjoyablePlace-content h2 {
+        padding-right: 0px;
+        margin: 46px 30px 27px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
