@@ -103,7 +103,12 @@ h3{
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1{
+        font: 300 48px/64px 'LeagueSpartan-Light';
+        letter-spacing: -0.6px;
+    }
+}
 
 /*############################## MOBILE VERSION ##############################*/
 
