@@ -1,4 +1,4 @@
-.slideNavBarButton{
+.slideNavBarButton {
     height: 28px;
     display: flex;
     flex-direction: row;
@@ -8,29 +8,49 @@
     letter-spacing: 2.5;
 }
 
-.snb-line{
+.snb-line {
     width: 95px;
     height: 1px;
     margin-right: 32px;
 }
 
-.slideNavBarButton div:last-child{
+.slideNavBarButton div:last-child {
     transition: color 0.3s ease;
     user-select: none;
 }
 
-.snb-disabled{
-    color: rgb(76,76,76)
+.snb-disabled {
+    color: rgb(76, 76, 76)
 }
 
-.snb-enabled{
-    color: rgba(76,76,76,0.5);
+.snb-enabled {
+    color: rgba(76, 76, 76, 0.5);
     user-select: none;
     cursor: pointer;
 }
 
-@media(hover:hover){
-    .snb-enabled:hover{
-        color: rgba(76,76,76,1);
+@media(hover:hover) {
+    .snb-enabled:hover {
+        color: rgba(76, 76, 76, 1);
     }
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slideNavBarButton {
+        height: 36px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .snb-line {
+        width: 48px;
+        margin: 0px auto;
+        align-self: flex-start;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
