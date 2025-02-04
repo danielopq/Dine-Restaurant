@@ -1,21 +1,42 @@
-#footerDetails{
+#footerDetails {
     width: inherit;
     height: 240px;
     padding: 78px 0px 0px 461px;
-    display:inline-flex;
+    display: inline-flex;
     background: var(--CodGrey) url('../../../img/logo.svg') 165px 78px/103px no-repeat;
     font: 400 16px/26px 'LeagueSpartan-Regular';
     letter-spacing: 2px;
-    color:white;
+    color: white;
 }
 
-#footerDetails > div{
+#footerDetails>div {
     height: 84px;
     display: flex;
     flex-direction: column;
 }
 
-#footerDetails > div:first-child{
+#footerDetails>div:first-child {
     width: 244px;
     margin-right: 124px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #footerDetails {
+        height: 328px;
+        padding: 64px 0px 62px 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--CodGrey) url('../../../img/logo.svg') 39px 64px/103px no-repeat;
+    }
+
+    #footerDetails>div:first-child {
+        margin-right: 0px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
