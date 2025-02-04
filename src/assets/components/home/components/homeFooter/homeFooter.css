@@ -1,20 +1,42 @@
-footer{
+footer {
     width: inherit;
     height: 480px;
     display: flex;
     flex-direction: column;
-    color:white;
+    color: white;
 }
 
-#footerTop{
+#footerTop {
     width: inherit;
     height: 240px;
     padding: 99px 165px 0px;
-    display:inline-flex;
+    display: inline-flex;
     justify-content: space-between;
     background: url('./img/ready-bg-desktop.jpg') center/1440px no-repeat;
 }
 
-#footerTop button{
+#footerTop button {
     width: 245px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        height: 600px;
+    }
+
+    #footerTop {
+        height: 272px;
+        padding: 72px 0px 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: url('./img/ready-bg-tablet.jpg') center/100vw no-repeat;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
