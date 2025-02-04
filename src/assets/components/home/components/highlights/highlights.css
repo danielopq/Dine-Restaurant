@@ -1,29 +1,29 @@
-#highlights{
+#highlights {
     width: inherit;
     height: 761px;
     padding: 200px 165px 0px;
     background-color: var(--CodGrey);
 }
 
-#highlights > div{
+#highlights>div {
     width: 1110px;
     height: 441px;
     display: inline-flex;
     justify-content: space-between;
 }
 
-#highlights-content{
+#highlights-content {
     width: 467px;
     height: inherit;
     color: white;
-    background: url('../../../../img/pattern-divide.svg' ) 0% 0%/71px no-repeat;
+    background: url('../../../../img/pattern-divide.svg') 0% 0%/71px no-repeat;
 }
 
 #highlights-content h2 {
     margin: 62px 0px 27px;
 }
 
-#highlights-dishes{
+#highlights-dishes {
     width: 540px;
     height: inherit;
     padding-top: 48px;
@@ -32,21 +32,22 @@
     justify-content: space-between;
 }
 
-.dish{
+.dish {
     width: inherit;
     height: 96px;
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
-.dish-separator{
+.dish-separator {
     width: inherit;
     height: 1px;
     background-color: #979797;
 }
 
-.dish-pic{
+.dish-pic {
     width: 160px;
     height: inherit;
     background-size: 128px;
@@ -54,7 +55,7 @@
     background-repeat: no-repeat;
 }
 
-.dish-pic div{
+.dish-pic div {
     width: 32px;
     height: 1px;
     float: right;
@@ -62,22 +63,71 @@
     background-color: var(--Beaver);
 }
 
-#dish-salmon{
+#dish-salmon {
     background-image: url('./img/salmon-desktop-tablet.jpg');
 }
 
-#dish-beef{
+#dish-beef {
     background-image: url('./img/beef-desktop-tablet.jpg');
 }
 
-#dish-chocolate{
+#dish-chocolate {
     background-image: url('./img/chocolate-desktop-tablet.jpg');
 }
 
-.dish-content{
+.dish-content {
     width: 350px;
     height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #highlights {
+        width: inherit;
+        height: 891px;
+        padding: 96px 0px 0px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    #highlights>div {
+        width: 573px;
+        height: 699px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #highlights-content {
+        width: 470px;
+        height: 259px;
+        background: url('../../../../img/pattern-divide.svg') 50% 0%/71px no-repeat;
+        text-align: center;
+    }
+
+    #highlights-content h2 {
+        margin: 39px 0px 27px;
+    }
+
+    #highlights-dishes {
+        width: 573px;
+        height: 386px;
+        padding-top: 0px;
+    }
+
+    .dish-content {
+        width: 383px;
+        height: 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
