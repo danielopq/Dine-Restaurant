@@ -12,3 +12,18 @@
 .slideText h2{
     margin-bottom: 19px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slideText{
+        width: 457px;
+        top: 70px;
+        text-align: center;
+        border: solid 1px red;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
