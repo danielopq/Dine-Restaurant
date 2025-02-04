@@ -1,19 +1,19 @@
-#slide{
+#slide {
     width: inherit;
     height: 920px;
     padding-top: 160px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: url('../../../../img/pattern-curve-bottom-right.svg') -350px 0px/895px no-repeat;
+    background: url('../../../../img/pattern-curve-top-right.svg') -350px 0px/895px no-repeat;
 }
 
-#slideImages{
+#slideImages {
     width: 540px;
     height: 600px;
 }
 
-#slide-navigator{
+#slide-navigator {
     width: 570px;
     height: 600px;
     padding: 0px 0px 62px 125px;
@@ -23,6 +23,36 @@
     position: relative;
 }
 
-#slide-navigator button{
+#slide-navigator button {
     width: 245px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #slide{
+        height: 1021px;
+        padding-top: 120px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #slideImages{
+        width: 573px;
+        height: 360px;
+    }
+    
+    #slide-navigator{
+        width: auto;
+        height: 369px;
+        padding: 0px;
+        margin-top: 57px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
