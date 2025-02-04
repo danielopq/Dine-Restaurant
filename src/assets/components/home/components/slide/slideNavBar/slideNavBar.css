@@ -6,3 +6,18 @@
     justify-content: space-between;
     margin: 79px 0px 0px -125px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #slideNavBar{
+        width: 689px;
+        height: 36px;
+        flex-direction: row;
+        margin: 57px 0px 0px 0px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
