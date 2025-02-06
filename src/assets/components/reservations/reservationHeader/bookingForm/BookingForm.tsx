@@ -9,7 +9,7 @@ import DefaultButton from '../../../shared/defaultButton/DefaultButton';
  * 
  * @returns {JSX.Element} The BookingForm component.
  */
-const BookingForm: React.FC = () => {
+const BookingForm: React.FC = (): JSX.Element => {
 
     return (
         <form id="bkForm" onSubmit={handleForm}>

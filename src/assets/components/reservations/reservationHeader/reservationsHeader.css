@@ -35,6 +35,7 @@
         padding: 0px;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         background: url('./img/ReservationsHeader-tablet.jpg') top/100vw no-repeat;
     }
 
