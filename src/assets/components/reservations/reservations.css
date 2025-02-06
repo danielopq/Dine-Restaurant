@@ -9,3 +9,19 @@
     align-items: center;
     transform: translate(-50%,-50%);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #reservations{
+        width: 100vw;
+        height: 1363px;
+        top:0px;
+        left:50%;
+        transform: translate(-50%,0%);
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}

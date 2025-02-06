@@ -1,5 +1,5 @@
 import './reservations.css';
-import FooterDetails from '../shared/footerDetails/footerDetails';
+import FooterDetails from '../shared/footerDetails/FooterDetails';
 import ReservationsHeader from './reservationHeader/ReservationsHeader';
 
 const Reservations: React.FC = () => {
