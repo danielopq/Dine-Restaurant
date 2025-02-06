@@ -112,4 +112,13 @@ h3{
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    h1{
+        font: 300 32px/40px 'LeagueSpartan-Light';
+        letter-spacing: -0.4px;
+    }
+
+    .mediumText{
+        font: 400 16px/26px 'LeagueSpartan-Regular';
+    }
+}

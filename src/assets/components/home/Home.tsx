@@ -6,17 +6,17 @@ import { HomeHeader, EnjoyablePlace, LocallySourcedFood, Highlights, Slide, Home
  * 
  * @returns {JSX.Element} - Home page of the website.
  */
-const Home: React.FC = () => {
+const Home: React.FC = (): JSX.Element => {
     return (
         <>
             <main id="home">
                 <HomeHeader />
-                <EnjoyablePlace />
+                {/* <EnjoyablePlace />
                 <LocallySourcedFood />
                 <Highlights />
-                <Slide />
+                <Slide /> */}
             </main>
-            <HomeFooter />
+            {/* <HomeFooter /> */}
         </>
 
     )

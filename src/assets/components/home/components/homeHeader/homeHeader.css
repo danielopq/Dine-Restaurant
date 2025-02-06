@@ -63,4 +63,29 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #homeHeader{
+        height: 748px;
+        background: var(--CodGrey) url('./img/bg-mobile.jpg') top/375px no-repeat;
+    }
+    
+    #homeHeader div{
+        width: inherit;
+        height: inherit;
+        padding: 300px 0px 0px;
+        align-items: center;
+        background: url(../../../../img/logo.svg) 50% 232px/82px no-repeat;
+        text-align: center;
+    }
+    
+    #homeHeader h1{
+        width: 260px;
+        height: 80px;
+    }
+    
+    #homeHeader p{
+        width: 327px;
+        height: 78px;
+        margin: 21px 0px 53px;
+    }
+}
