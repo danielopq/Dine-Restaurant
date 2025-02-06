@@ -75,4 +75,39 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #locallySourcedFood {
+        width: inherit;
+        height: 662px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 101px;
+        background: none;
+    }
+    
+    #lsf-content {
+        width: 327px;
+        height: 214px;
+        margin: 48px 0px 0px;
+        text-align: center;
+        background: url('../../../../img/pattern-divide.svg') 50% 0%/71px no-repeat;
+    }
+    
+    #lsf-content h2 {
+        padding-right: 0px;
+        margin: 36px 0px 13px;
+    }
+    
+    #lsf-Pic {
+        width: 327px;
+        height: 400px;
+        margin-top: 0px;
+        background: url('./img/locally-sourced-mobile.jpg') center/327px no-repeat;
+        box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
+    }
+    
+    #lsf-Pic div {
+        display: none;
+    }
+}

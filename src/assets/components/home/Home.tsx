@@ -12,8 +12,8 @@ const Home: React.FC = (): JSX.Element => {
             <main id="home">
                 <HomeHeader />
                 <EnjoyablePlace />
-                {/* <LocallySourcedFood />
-                <Highlights />
+                <LocallySourcedFood />
+                {/* <Highlights />
                 <Slide /> */}
             </main>
             {/* <HomeFooter /> */}
