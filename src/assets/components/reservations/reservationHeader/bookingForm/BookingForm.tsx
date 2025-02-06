@@ -3,6 +3,12 @@ import {handleForm,showSelect,selectDaytime,handleGuests} from './services';
 
 import DefaultButton from '../../../shared/defaultButton/DefaultButton';
 
+
+/**
+ * Component that renders the reservations form.
+ * 
+ * @returns {JSX.Element} The BookingForm component.
+ */
 const BookingForm: React.FC = () => {
 
     return (
