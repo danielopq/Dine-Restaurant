@@ -1,6 +1,12 @@
 import './reservationsHeader.css';
 import BookingForm from './bookingForm/BookingForm';
 
+/**
+ * Component that renders the header of the reservations section.
+ * 
+ * @returns {JSX.Element} The ReservationsHeader component.
+ */
+
 const ReservationsHeader: React.FC = () => {
     return (
         <header id="reservationsHeader">
