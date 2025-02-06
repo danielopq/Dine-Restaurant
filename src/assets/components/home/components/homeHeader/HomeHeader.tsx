@@ -7,7 +7,7 @@ import DefaultButton from '../../../shared/defaultButton/DefaultButton';
  * 
  * @returns {JSX.Element} The HomeHeader component.
  */
-const HomeHeader: React.FC = () => {
+const HomeHeader: React.FC = (): JSX.Element => {
     return (
         <header id="homeHeader">
             <div>

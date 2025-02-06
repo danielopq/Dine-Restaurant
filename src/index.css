@@ -118,6 +118,11 @@ h3{
         letter-spacing: -0.4px;
     }
 
+    h2{
+        font: 700 32px/40px 'LeagueSpartan-Bold';
+        letter-spacing: -0.4px;
+    }
+
     .mediumText{
         font: 400 16px/26px 'LeagueSpartan-Regular';
     }

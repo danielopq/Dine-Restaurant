@@ -5,7 +5,7 @@ import './enjoyablePlace.css';
  * 
  * @returns {JSX.Element} - The 'EnjoyablePlace' component displaying the section content.
  */
-const EnjoyablePlace:React.FC = () =>{
+const EnjoyablePlace:React.FC = (): JSX.Element =>{
     return(
         <section id="enjoyablePlace">
             <div id="enjoyablePlace-pic"></div>
