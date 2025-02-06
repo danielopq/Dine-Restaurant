@@ -1,4 +1,4 @@
-#reservationsHeader{
+#reservationsHeader {
     width: inherit;
     height: 919px;
     padding: 0px 165px;
@@ -6,12 +6,12 @@
     flex-direction: row;
     justify-content: space-between;
     background:
-    url('../../../img/pattern-lines.svg') 50% 766px/160px no-repeat,
-    url('./img/ReservationsHeader-desktop.jpg') top/1440px no-repeat,
-    url('../../../img/pattern-curve-bottom-right.svg') 0% 100%/993px no-repeat;
+        url('../../../img/pattern-lines.svg') 50% 766px/160px no-repeat,
+        url('./img/ReservationsHeader-desktop.jpg') top/1440px no-repeat,
+        url('../../../img/pattern-curve-bottom-right.svg') 0% 100%/993px no-repeat;
 }
 
-#reservations-text{
+#reservations-text {
     width: 445px;
     height: 381px;
     margin-top: 65px;
@@ -22,6 +22,40 @@
     color: white;
 }
 
-#reservations-text > p{
+#reservations-text>p {
     margin-top: 18px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #reservationsHeader {
+        width: inherit;
+        height: 1035px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        background: url('./img/ReservationsHeader-tablet.jpg') top/100vw no-repeat;
+    }
+
+    #reservations-text {
+        width: 689px;
+        height: 276px;
+        margin-top: 56px;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    #reservations-text>h1 {
+        margin-top: 110px;
+    }
+    #reservations-text>p {
+        width: 573px;
+        margin-top: 18px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
