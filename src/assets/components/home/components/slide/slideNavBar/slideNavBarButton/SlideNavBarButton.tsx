@@ -16,9 +16,9 @@ interface SlideNavBarButtonProps{
  * @param {boolean} param0.disabled - Indicates whether the button is disabled.
  * @param {function} param0.setSlide - Function to update the displayed special event.
  * @param {number} param0.slideEvent - The special event to be displayed.
- * @returns A React component representing a navigation button.
+ * @returns {JSX.Element} A React component representing a navigation button.
  */
-const SlideNavBarButton: React.FC<SlideNavBarButtonProps> = ({text,disabled,setSlide,slideEvent}) => {
+const SlideNavBarButton: React.FC<SlideNavBarButtonProps> = ({text,disabled,setSlide,slideEvent}): JSX.Element => {
     return (
         <div className='slideNavBarButton'>
             <div className="snb-line" style={{backgroundColor: disabled ? 'var(--Beaver)' : 'white'}}></div>
