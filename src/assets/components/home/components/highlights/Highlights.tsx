@@ -5,7 +5,7 @@ import './highlights.css';
  * 
  * @returns {JSX.Element} - A React component displaying the highlights section with featured dishes.
  */
-const Highlights: React.FC = () => {
+const Highlights: React.FC = (): JSX.Element => {
     return (
         <section id="highlights">
             <div>

@@ -130,4 +130,93 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #highlights {
+        width: inherit;
+        height: 1720px;
+        padding: 0px;
+        margin-top: 101px;
+        display: inline-flex;
+        justify-content: center; 
+    }
+
+    #highlights>div {
+        width: 327px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #highlights-content {
+        width: inherit;
+        height: 214px;
+        margin-top: 72px;
+        color: white;
+        background: url('../../../../img/pattern-divide.svg') 50% 0%/71px no-repeat;
+        text-align: center;
+    }
+    
+    #highlights-content h2 {
+        margin: 36px 0px 13px;
+    }
+    
+    #highlights-dishes {
+        width: inherit;
+        height: auto;
+        padding-top: 0px;
+        margin-top: 48px;
+        justify-content: flex-start;
+    }
+    
+    .dish {
+        height: 418px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .dish-separator {
+        margin-bottom: 24px;
+    }
+
+    .dish-pic {
+        width: inherit;
+        height: 245px;
+        background-size: 327px;
+        background-position: center;
+    }
+    
+    .dish-pic div {
+        display: none;
+    }
+    
+    #dish-salmon {
+        background-image: url('./img/salmon-mobile.jpg');
+    }
+    
+    #dish-beef {
+        background-image: url('./img/beef-mobile.jpg');
+    }
+    
+    #dish-chocolate {
+        background-image: url('./img/chocolate-mobile.jpg');
+    }
+    
+    .dish-content {
+        width: inherit;
+        height: 172px;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .dish-content p{
+        padding: 0px 33px;
+    }
+
+    .dish-content h3{
+        margin: 36px 0px 6px;
+    }
+}

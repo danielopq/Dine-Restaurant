@@ -13,8 +13,8 @@ const Home: React.FC = (): JSX.Element => {
                 <HomeHeader />
                 <EnjoyablePlace />
                 <LocallySourcedFood />
-                {/* <Highlights />
-                <Slide /> */}
+                <Highlights />
+                {/* <Slide /> */}
             </main>
             {/* <HomeFooter /> */}
         </>
