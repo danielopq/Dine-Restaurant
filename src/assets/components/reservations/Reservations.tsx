@@ -7,7 +7,7 @@ import ReservationsHeader from './reservationHeader/ReservationsHeader';
  *
  * @returns {JSX.Element} The Reservations component.
  */
-const Reservations: React.FC = () => {
+const Reservations: React.FC = (): JSX.Element => {
     return (
         <main id="reservations">
             <ReservationsHeader />
