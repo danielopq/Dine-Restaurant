@@ -39,4 +39,20 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #footerDetails {
+        height: 440px;
+        padding: 162px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--CodGrey) url('../../../img/logo.svg') 50% 80px/103px no-repeat;
+        text-align: center;
+        font: 400 14px/28px 'LeagueSpartan-Regular';
+    }
+        
+    #footerDetails>div:first-child {
+        margin: 0px 0px 32px;
+    }
+}

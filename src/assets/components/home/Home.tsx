@@ -16,7 +16,7 @@ const Home: React.FC = (): JSX.Element => {
                 <Highlights />
                 <Slide />
             </main>
-            {/* <HomeFooter /> */}
+            <HomeFooter />
         </>
 
     )

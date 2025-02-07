@@ -8,7 +8,7 @@ import './footerDetails.css';
  * 
  * @returns {JSX.Element} - FooterDetails component displaying contact and opening times
  */
-const FooterDetails: React.FC = () => {
+const FooterDetails: React.FC = (): JSX.Element => {
     return (
         <div id="footerDetails">
             <div>
