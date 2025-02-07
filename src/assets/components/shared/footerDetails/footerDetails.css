@@ -42,7 +42,7 @@
 @media screen and (max-width:767px) {
     #footerDetails {
         height: 440px;
-        padding: 162px 0px 0px;
+        padding: 162px 0px 78px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
