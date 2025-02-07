@@ -13,7 +13,7 @@ import { SlideEvents, SlidePicture, SlideNavBar, SlideText } from './index';
  * 
  * @returns {JSX.Element} The Slide component containing the slideshow.
  */
-const Slide: React.FC = () => {
+const Slide: React.FC = (): JSX.Element => {
     const [currentEvent,setCurrentEvent] = useState<number>(0);
     const [displayedEvents, setDisplayedEvents] = useState<boolean[]>([true, false, false]);
 
