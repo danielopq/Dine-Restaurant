@@ -20,4 +20,10 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #slideNavBar{
+        width: 326px;
+        height: 116px;
+        margin: 49px 0px 0px;
+    }
+}

@@ -19,7 +19,7 @@ interface SlideNavBarProps{
  * @param {function} props.setSlide - A function to update and display the selected event.
  * @returns {JSX.Element} The SlideNavBar component.
  */
-const SlideNavBar:React.FC<SlideNavBarProps> = ({displayedEvents,setSlide}) => {
+const SlideNavBar:React.FC<SlideNavBarProps> = ({displayedEvents,setSlide}: SlideNavBarProps): JSX.Element => {
     return (
         <nav id="slideNavBar">
             <SlideNavBarButton text={'FAMILY GATHERING'} disabled={displayedEvents[0]} setSlide={setSlide} slideEvent={0}/>
