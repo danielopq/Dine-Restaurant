@@ -23,7 +23,7 @@ interface SlidePictureProps {
  * @param {string} props.mobilePic - Image URL for mobile devices.
  * @returns {JSX.Element} A styled `div` with a dynamic background image.
  */
-const SlidePicture: React.FC<SlidePictureProps> = ({ visible, desktopPic, tabletPic, mobilePic }) => {
+const SlidePicture: React.FC<SlidePictureProps> = ({ visible, desktopPic, tabletPic, mobilePic }: SlidePictureProps): JSX.Element => {
     const [backgroundImage, setBackgroundImage] = useState<string>('');
 
 
