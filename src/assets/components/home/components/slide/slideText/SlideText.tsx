@@ -19,7 +19,7 @@ interface SlideTextProps{
  * @param {boolean} props.visible - Whether the component is visible or not
  * @returns {JSX.Element} SlideText component
  */
-const SlideText: React.FC<SlideTextProps> = ({title,visible,text}) => {
+const SlideText: React.FC<SlideTextProps> = ({title,visible,text}: { title: string; text: string; visible: boolean; }): JSX.Element => {
     return (
         <div className='slideText' style={{opacity:visible ? '1' : '0'}}>
             <h2>{title}</h2>
