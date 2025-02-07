@@ -9,7 +9,7 @@ import NavigateTo from '../../../../services/NavigateTo';
  * 
  * @returns {JSX.Element} - The Footer component.
  */
-const HomeFooter: React.FC = () => {
+const HomeFooter: React.FC = (): JSX.Element => {
 
     return (
         <footer>

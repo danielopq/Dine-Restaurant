@@ -39,4 +39,25 @@ footer {
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    footer {
+        width: inherit;
+        height: 768px;
+    }
+    
+    #footerTop {
+        width: inherit;
+        height: 328px;
+        padding: 84px 0px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background: url('./img/ready-bg-mobile.jpg') top/cover no-repeat;
+    }
+
+    #footerTop h2{
+        width: 327px;
+    }
+}
