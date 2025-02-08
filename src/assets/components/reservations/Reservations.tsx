@@ -11,7 +11,7 @@ const Reservations: React.FC = (): JSX.Element => {
     return (
         <main id="reservations">
             <ReservationsHeader />
-            <FooterDetails />
+            {/* <FooterDetails /> */}
         </main>
     )
 }

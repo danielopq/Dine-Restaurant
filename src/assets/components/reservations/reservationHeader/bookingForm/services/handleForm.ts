@@ -187,12 +187,16 @@ const validateTime = (): boolean => {
 
 const validatePeople = (): boolean => {
     const people = document.getElementById('people') as HTMLParagraphElement;
+    const guestsLine = document.getElementById('guestsLine') as HTMLDivElement;
     const guestsNumber = document.getElementById('guestsNumber') as HTMLSpanElement;
+    
     if (guestsNumber.innerHTML === '0') {
         people.style.color = 'var(--Red)';
+        guestsLine.style.borderBottom = 'border-bottom: solid 1px var(--Red);';
         return false;
     } else {
         people.style.color = 'var(--CodGrey)';
+        guestsLine.style.borderBottom = 'border-bottom: solid 1px var(--CodGrey);';
         return true;
     }
 }

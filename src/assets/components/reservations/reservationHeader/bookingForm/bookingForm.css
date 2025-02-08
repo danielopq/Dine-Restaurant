@@ -108,6 +108,7 @@
 #guestsLine {
     padding: 0px 30px 0px;
     align-items: flex-start;
+    border-bottom: solid 1px var(--CodGrey);
 }
 
 .setPeopleBt {
@@ -170,4 +171,51 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #bookingForm {
+        width: 327px;
+        min-height: 585px;
+        padding: 0px 32px 32px;
+        margin-top: 463px;
+    }
+ 
+    #dateLine,
+    #timeLine{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #dateLine>div:last-child,
+    #timeLine>div:last-child {
+        margin-top: 10px;
+        width: 263px;
+    }
+    
+    .shortInput {
+        max-width: 73px;
+    }
+    
+    .longInput {
+        max-width: 88px;
+    }
+    
+    #dayTimeBt {
+        margin: 7px 231px 0px;
+        
+    }
+    
+    #dayTimeselect {
+        margin: 51px 166px 0px;
+    }
+        
+    #guestsLine {
+        padding: 0px 19px 0px;
+    }
+    
+    #bookingForm>button {
+        width: 263px;
+    }
+    
+}
