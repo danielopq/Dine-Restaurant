@@ -15,7 +15,7 @@ interface DefaultButtonProps{
  * @param {'darkBt' | 'lightBt'} props.buttonStyle - Defines the style of the button ('darkBt' or 'lightBt').
  * @returns {JSX.Element} - A styled button component.
  */
-const DefaultButton:React.FC<DefaultButtonProps> = ({text,buttonStyle,buttonType = 'button',handleClick}) =>{
+const DefaultButton:React.FC<DefaultButtonProps> = ({text,buttonStyle,buttonType = 'button',handleClick}: DefaultButtonProps): JSX.Element =>{
     return(
         <button className={`defaultButton ${buttonStyle}`} type={buttonType} onClick={handleClick}>{text.toUpperCase()}</button>
     )

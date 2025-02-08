@@ -10,9 +10,11 @@ interface BookingTime {
     dayTime: HTMLInputElement | null;
 }
 
-export const handleForm = (event: React.FormEvent<HTMLFormElement>): void => {
+export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
     let validated = true;
-    event.preventDefault();
+    if (event != undefined) {
+        event.preventDefault();
+    }
     !validateName() && (validated = false);
     !validateEmail() && (validated = false);
     !validateDate() && (validated = false);
