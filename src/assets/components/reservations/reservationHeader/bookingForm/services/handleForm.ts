@@ -10,11 +10,15 @@ interface BookingTime {
     dayTime: HTMLInputElement | null;
 }
 
+/**
+ * Validates the different parts of the reservation form.
+ * 
+ * @param {React.FormEvent<HTMLFormElement> | undefined} event - The form submission event.
+ */
+
 export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
     let validated = true;
-    if (event != undefined) {
-        event.preventDefault();
-    }
+    event != undefined && event.preventDefault();
     !validateName() && (validated = false);
     !validateEmail() && (validated = false);
     !validateDate() && (validated = false);
@@ -24,6 +28,12 @@ export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
 
 /* ################### FORM VALIDATING FUNCTIONS ################### */
 
+
+/**
+ * Checks the name field and displays an error message if it is empty.
+ * 
+ * @returns {boolean} - Returns false if the field is empty.
+ */
 const validateName = (): boolean => {
     let validated = false;
     const name = document.getElementById('name') as HTMLInputElement | null;
@@ -43,6 +53,11 @@ const validateName = (): boolean => {
     return validated;
 }
 
+/**
+ * Checks the email field and displays an error message if it is empty or contains an invalid format.
+ * 
+ * @returns {boolean} - Returns false if the field is empty or the format is invalid.
+ */
 const validateEmail = (): boolean => {
     let validated = false;
     let messageError: string = '';
@@ -64,6 +79,11 @@ const validateEmail = (): boolean => {
     return validated;
 }
 
+/**
+ * Checks the date fields and displays an error message if they are empty or contain an invalid date format.
+ * 
+ * @returns {boolean} - Returns false if any field is empty or the date is invalid.
+ */
 const validateDate = (): boolean => {
     let validated = true;
     let messageError: string = '';
@@ -116,6 +136,13 @@ const validateDate = (): boolean => {
 
     return validated;
 }
+
+/**
+ * Checks the time fields and displays an error message if they are empty, contain an invalid format, 
+ * or if the selected time is outside the restaurant's booking hours.
+ * 
+ * @returns {boolean} - Returns false if any field is empty, the time is invalid, or out of range.
+ */
 
 const validateTime = (): boolean => {
     let validated = true;
@@ -185,11 +212,17 @@ const validateTime = (): boolean => {
     return validated;
 }
 
+/**
+ * Checks the number of guests and displays an error message if it is 0.
+ * 
+ * @returns {boolean} - Returns false if the number of guests is 0.
+ */
+
 const validatePeople = (): boolean => {
     const people = document.getElementById('people') as HTMLParagraphElement;
     const guestsLine = document.getElementById('guestsLine') as HTMLDivElement;
     const guestsNumber = document.getElementById('guestsNumber') as HTMLSpanElement;
-    
+
     if (guestsNumber.innerHTML === '0') {
         people.style.color = 'var(--Red)';
         guestsLine.style.borderBottom = 'border-bottom: solid 1px var(--Red);';
@@ -203,19 +236,46 @@ const validatePeople = (): boolean => {
 
 /** ################### COMMON FUNCTIONS ###################*/
 
+
+/**
+ * Checks if a string (field value) is empty.
+ * 
+ * @param {string} value - The field value to check.
+ * @returns {boolean} - Returns false if the string is empty.
+ */
 const validateFilled = (value: string): boolean => {
     return !(value.toString().trim() === '');
 }
 
+/**
+ * Validates if a string is in a correct email format.
+ * 
+ * @param {string} value - The email string to check.
+ * @returns {boolean} - Returns false if the format is invalid.
+ */
 const validateEmailFormat = (value: string): boolean => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(value);
 };
 
+/**
+ * Checks if a string contains a valid number.
+ * 
+ * @param {string} value - The string to check.
+ * @returns {boolean} - Returns false if the string does not contain a valid number.
+ */
 const isNumber = (value: string): boolean => {
     return !isNaN(Number(value)) && isFinite(Number(value));
 }
 
+/**
+ * Validates if a given date is a real and valid date.
+ * 
+ * @param {number} day - The day of the date.
+ * @param {number} month - The month of the date.
+ * @param {number} year - The year of the date.
+ * @returns {boolean} - Returns false if the date is invalid.
+ */
 const isValidDate = (day: number, month: number, year: number): boolean => {
     const date = new Date(year, month - 1, day);
     return (
@@ -225,6 +285,14 @@ const isValidDate = (day: number, month: number, year: number): boolean => {
     );
 }
 
+/**
+ * Validates if a given date is in the future.
+ * 
+ * @param {number} day - The day of the date.
+ * @param {number} month - The month of the date.
+ * @param {number} year - The year of the date.
+ * @returns {boolean} - Returns false if the date is in the past.
+ */
 const isFutureDate = (day: number, month: number, year: number): boolean => {
     const inputDate = new Date(year, month - 1, day);
     const today = new Date();
@@ -232,6 +300,15 @@ const isFutureDate = (day: number, month: number, year: number): boolean => {
     return inputDate >= today;
 }
 
+
+/**
+ * Validates if a given time is within the allowed booking hours (9:00 AM - 9:30 PM).
+ * 
+ * @param {number} hour - The hour of the time.
+ * @param {number} minutes - The minutes of the time.
+ * @param {string} dayTime - "AM" or "PM" indicator.
+ * @returns {boolean} - Returns false if the time is outside the booking hours.
+ */
 const isBookingTime = (hour: number, minutes: number, dayTime: string): boolean => {
     let convertedHour: number;
 
