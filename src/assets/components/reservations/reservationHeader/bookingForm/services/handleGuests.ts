@@ -1,3 +1,9 @@
+/**
+ * Increases or decreases the number of guests based on the clicked button.
+ * 
+ * @param {React.MouseEvent<HTMLButtonElement>} event - The click event from the button.
+ */
+
 export const handleGuests = (event:React.MouseEvent<HTMLButtonElement>) =>{
     let newPeopleNumber:number;
     const people = document.getElementById('people') as HTMLParagraphElement;
