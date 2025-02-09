@@ -27,7 +27,7 @@
 @media screen and (max-width:767px) {
     #reservations{
         width: 100vw;
-        height: 1134px;
+        height: 1574px;
         top:0px;
         left:50%;
         transform: translate(-50%,0%);
