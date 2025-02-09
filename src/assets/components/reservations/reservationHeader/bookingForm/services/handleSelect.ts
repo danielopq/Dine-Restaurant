@@ -1,3 +1,7 @@
+/**
+ * Displays or hides the 'dayTimeselect' submenu and updates the arrow direction 
+ * in the 'dayTimeBt' button based on the visibility of 'dayTimeselect'.
+ */
 export const showSelect = ():void=>{
     const dayTimeBt = document.getElementById('dayTimeBt') as HTMLDivElement | null;
     const dayTimeselect = document.getElementById('dayTimeselect') as HTMLDivElement | null;
@@ -7,6 +11,11 @@ export const showSelect = ():void=>{
     }
 }
 
+/**
+ * Sets the selected daytime value ('AM' or 'PM') and updates the button styles accordingly.
+ * 
+ * @param {React.MouseEvent<HTMLButtonElement>} event - The click event from the AM/PM button.
+ */
 export const selectDaytime = (event: React.MouseEvent<HTMLButtonElement>):void=>{
     const dayTime = document.getElementById('dayTime') as HTMLInputElement | null;
     const amButton = document.getElementById('am-button') as HTMLButtonElement | null;
