@@ -23,6 +23,7 @@
 }
 
 #enjoyablePlace-content h2 {
+    width: 400px;
     padding-right: 40px;
     margin: 62px 0px 27px;
 }
@@ -55,6 +56,7 @@
     }
 
     #enjoyablePlace-content h2 {
+        width: inherit;
         padding-right: 0px;
         margin: 46px 30px 27px;
     }
@@ -89,6 +91,7 @@
     }
     
     #enjoyablePlace-content h2 {
+        width: inherit;
         padding-right: 0px;
         margin: 36px 0px 13px;
     }

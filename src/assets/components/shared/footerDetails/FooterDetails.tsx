@@ -12,8 +12,8 @@ const FooterDetails: React.FC = (): JSX.Element => {
     return (
         <div id="footerDetails">
             <div>
-                <p>Marthwaite, Sedbergh</p>
-                <p>Cumbria</p>
+                <p>MARTHWAITE, SEDBERGH</p>
+                <p>CUMBRIA</p>
                 <p>+00 44 123 4567</p>
             </div>
             <div>

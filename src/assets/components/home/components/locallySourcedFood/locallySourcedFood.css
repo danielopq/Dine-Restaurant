@@ -3,14 +3,14 @@
     height: 720px;
     display: inline-flex;
     margin-top: 31px;
-    background: url('../../../../img/pattern-curve-top-left.svg') 100% 100%/895px no-repeat;
+    background: url('../../../../img/pattern-curve-top-left.svg') 100% 391px/895px no-repeat;
     z-index: 1;
 }
 
 #lsf-content {
     width: 445px;
     height: 275px;
-    margin: 231px 125px 0px 165px;
+    margin: 290px 125px 0px 165px;
     color: var(--EbonyClay);
     background: url('../../../../img/pattern-divide.svg') 0% 0%/71px no-repeat;
 }
@@ -30,7 +30,7 @@
 #lsf-Pic div {
     width: 160px;
     height: 76px;
-    margin-top: 282px;
+    margin-top: 262px;
     float: right;
     background: url('../../../../img/pattern-lines.svg') center/160px no-repeat;
 }

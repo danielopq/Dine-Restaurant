@@ -9,10 +9,15 @@ footer {
 #footerTop {
     width: inherit;
     height: 240px;
-    padding: 99px 165px 0px;
+    padding: 0px 165px 0px;
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
     background: url('./img/ready-bg-desktop.jpg') center/1440px no-repeat;
+}
+
+#footerTop h2{
+    margin-top: 9px;
 }
 
 #footerTop button {
@@ -31,8 +36,6 @@ footer {
         padding: 72px 0px 64px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         background: url('./img/ready-bg-tablet.jpg') center/100vw no-repeat;
     }
 }
@@ -51,8 +54,6 @@ footer {
         padding: 84px 0px 80px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
         text-align: center;
         background: url('./img/ready-bg-mobile.jpg') top/cover no-repeat;
     }

@@ -24,6 +24,7 @@ export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
     !validateDate() && (validated = false);
     !validateTime() && (validated = false);
     !validatePeople() && (validated = false);
+    !validated && console.log('errors found');
 }
 
 /* ################### FORM VALIDATING FUNCTIONS ################### */

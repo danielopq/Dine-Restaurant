@@ -1,11 +1,11 @@
 #slide {
     width: inherit;
-    height: 920px;
-    padding-top: 160px;
+    height: 900px;
+    padding-top: 140px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: url('../../../../img/pattern-curve-top-right.svg') -350px 0px/895px no-repeat;
+    background: url('../../../../img/pattern-curve-top-right.svg') -350px -20px/895px no-repeat;
 }
 
 #slideImages {
@@ -15,7 +15,7 @@
 
 #slide-navigator {
     width: 570px;
-    height: 600px;
+    height: 597px;
     padding: 0px 0px 62px 125px;
     display: flex;
     flex-direction: column;

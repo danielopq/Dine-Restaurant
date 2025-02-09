@@ -1,10 +1,10 @@
 #footerDetails {
     width: inherit;
     height: 240px;
-    padding: 78px 0px 0px 461px;
+    padding: 80px 0px 0px 461px;
     display: inline-flex;
     background: var(--CodGrey) url('../../../img/logo.svg') 165px 78px/103px no-repeat;
-    font: 400 16px/26px 'LeagueSpartan-Regular';
+    font: 400 14px/28px 'LeagueSpartan-Regular';
     letter-spacing: 2px;
     color: white;
 }
