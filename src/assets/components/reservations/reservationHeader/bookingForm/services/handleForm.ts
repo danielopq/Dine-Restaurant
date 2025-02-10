@@ -1,3 +1,5 @@
+import  {EmailService} from './emailService';
+
 interface BookingDate {
     day: HTMLInputElement | null;
     month: HTMLInputElement | null;
@@ -24,7 +26,15 @@ export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
     !validateDate() && (validated = false);
     !validateTime() && (validated = false);
     !validatePeople() && (validated = false);
-    !validated && console.log('errors found');
+
+    if(validated){
+        const emailService = new EmailService();
+        emailService.sendEmail({
+            to:'danielopq@gmail.com',
+            subject:'Dine Restaurant',
+            htmlBody:'Hola mundo'
+        });
+    }
 }
 
 /* ################### FORM VALIDATING FUNCTIONS ################### */
