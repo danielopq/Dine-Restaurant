@@ -18,13 +18,20 @@ interface BookingTime {
 
 export const handleForm = (event?: React.FormEvent<HTMLFormElement>): void => {
     let validated = true;
+    const confirmationWindow = document.getElementById('confirmationWindow') as HTMLDivElement | null;
+    const bkForm = document.getElementById('bkForm') as HTMLFormElement | null;
     event != undefined && event.preventDefault();
     !validateName() && (validated = false);
     !validateEmail() && (validated = false);
     !validateDate() && (validated = false);
     !validateTime() && (validated = false);
     !validatePeople() && (validated = false);
-    !validated && console.log('errors found');
+    if (validated && confirmationWindow && bkForm){
+        confirmationWindow.style.display = "inline-flex";
+        bkForm.reset();
+        resetPeople();
+        resetDaytime();
+    }
 }
 
 /* ################### FORM VALIDATING FUNCTIONS ################### */
@@ -234,6 +241,28 @@ const validatePeople = (): boolean => {
         return true;
     }
 }
+
+/**
+ * Resets the number of guests to 0.
+ */
+const resetPeople = ():void=>{
+    const people = document.getElementById('people') as HTMLParagraphElement;
+    people && (people.innerHTML = "0");
+}
+
+/**
+ * Clears the selection of the daytime buttons (AM and PM).
+ */
+export const resetDaytime = ():void=>{
+    const amButton = document.getElementById('am-button') as HTMLButtonElement | null;
+    const pmButton = document.getElementById('pm-button') as HTMLButtonElement | null;
+
+    if(pmButton && amButton){
+        amButton.className = '';
+        pmButton.className = '';
+    }
+}
+
 
 /** ################### COMMON FUNCTIONS ###################*/
 

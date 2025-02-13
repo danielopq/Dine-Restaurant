@@ -161,6 +161,34 @@
     color: rgba(181,73,73,0.5);
 }
 
+#confirmationWindow{
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+}
+#confirmationWindow > div{
+    width: 320px;
+    height: 250px;
+    padding: 35px 0px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+#confirmationWindow *{
+    width: 240px;
+}
+#confirmationWindow p{
+    font: 400 25px/35px 'LeagueSpartan-Regular';
+    text-align: center;
+}
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
