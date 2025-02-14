@@ -246,8 +246,8 @@ const validatePeople = (): boolean => {
  * Resets the number of guests to 0.
  */
 const resetPeople = ():void=>{
-    const people = document.getElementById('people') as HTMLParagraphElement;
-    people && (people.innerHTML = "0");
+    const guestsNumber = document.getElementById('guestsNumber') as HTMLSpanElement;
+    guestsNumber && (guestsNumber.innerHTML = "0");
 }
 
 /**
