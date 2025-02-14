@@ -22,13 +22,13 @@ The website is fully responsive, adapting seamlessly to desktop, tablet, and mob
 
 ### Screenshots
 
-- [home - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-desktop.jpg)
-- [home - tablet version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-mobile.jpg)
-- [home - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/home-mobile.jpg)
+- [home - desktop version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/home-desktop.png)
+- [home - tablet version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/home-tablet.png)
+- [home - mobile version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/home-mobile.png)
 
-- [portfolio - desktop version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-desktop.jpg)
-- [portfolio - tablet version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-mobile.jpg)
-- [portfolio - mobile version](https://github.com/danielopq/Arch-Studio/blob/main/screenshots/portfolio-mobile.jpg)
+- [portfolio - desktop version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/reservations-desktop.png)
+- [portfolio - tablet version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/reservations-tablet.png)
+- [portfolio - mobile version](https://github.com/danielopq/Dine-Restaurant/blob/main/screenshots/reservations-mobile.png)
 
 ### Links
 
