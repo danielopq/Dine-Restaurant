@@ -10,13 +10,15 @@
 
 ## Overview
 
-The website for an architecture studio was developed using React and TypeScript, ensuring a robust and maintainable codebase. The homepage features an engaging slideshow showcasing a curated selection of the studio's projects, providing visitors with a dynamic introduction to its portfolio.
+I developed the frontend of a restaurant website based on a provided Figma design. The project was built using React with TypeScript and CSS, ensuring a clean and maintainable codebase.
 
-To enhance the user experience, the site integrates with Leaflet, an open-source JavaScript library, to display the studio's office locations on an interactive map. This functionality allows users to easily visualize and locate the offices.
+The website consists of two main sections:
 
-A fully functional contact form is implemented with comprehensive data validation, ensuring that user inputs are correctly formatted before submission. This enhances both usability and data integrity.
+  - Home Page: This section provides key information about the restaurant, including its concept, location, and offerings. It also features a dynamic slideshow displaying high-quality images of the venue and its dishes, enhancing user engagement.
 
-The website is fully responsive, offering seamless performance and a visually consistent experience across various devices, including desktops, tablets, and mobile phones. Special attention was given to the design and layout to ensure accessibility and usability on screens of all sizes.
+  - Reservations: Guests can easily book a table using a user-friendly reservation form. The form includes input validation to ensure accurate and complete data submission, improving the overall booking experience.
+
+The website is fully responsive, adapting seamlessly to desktop, tablet, and mobile devices for an optimal user experience across all screen sizes. Despite its simplicity, the design and functionality effectively serve the restaurant’s needs, offering an intuitive and visually appealing interface.
 
 ### Screenshots
 
